@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precios — MaderaStudio | Planes y tarifas</title>
+  <meta name="description" content="Conoce nuestros precios y planes de carpintería: desde muebles individuales hasta planes mensuales para empresas.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+          },
+          colors: { wood: { 50:'#FFFBEB', 100:'#fef3c7', 200:'#fde68a', 700:'#B45309', 800:'#92400E', 900:'#78350F' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <!-- HERO -->
+  <header class="relative bg-hero text-white overflow-hidden" data-parallax>
+    <div class="absolute inset-0 wood-texture"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="container-page relative pt-20 pb-24 md:pb-32">
+      <div class="max-w-3xl">
+        <span class="badge mb-6 anim-fade-in-down" data-reveal>Inversión transparente</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 anim-fade-in-up" data-reveal>
+          Precios claros, <span class="font-display italic text-amber-300">sin sorpresas</span>
+        </h1>
+        <p class="text-lg md:text-xl text-amber-50 anim-fade-in-up" style="animation-delay:0.2s" data-reveal>
+          Conoce nuestras tarifas de referencia. Para cotizaciones formales agendamos una visita técnica sin costo.
+        </p>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.16c58.36-10.79,114.27-30.13,172-41.86,82.39-16.72,168.2-44.42,250.61-35.38,60.55,6.62,116.62,32.68,177.18,49.06,57,15.46,114.48,22.71,171.45,16.95C1156.69,38.59,1200,57.46,1200,57.46V120H0V29.61C49.18,52.31,153.84,80.66,321.39,56.16Z" fill="#FFFBEB"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- PLANES MENSUALES -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Planes mensuales</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Para quienes necesitan amoblar más</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Elige el plan que se ajuste a tu ritmo y paga mes a mes. Sin contratos largos ni cláusulas abusivas.</p>
+      </div>
+      <div id="planes-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"></div>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section class="bg-wood-gradient text-white py-16">
+    <div class="container-page">
+      <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- LISTA DE PRECIOS UNITARIOS -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Tarifas referenciales</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Lista de precios por servicio</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Valores aproximados. El precio final depende de medidas, materiales y terminaciones elegidas.</p>
+      </div>
+      <div class="max-w-4xl mx-auto card p-6 md:p-8" data-anim="fade-in-up">
+        <div id="precios-list" class="divide-y divide-amber-100"></div>
+      </div>
+      <p class="text-center text-sm text-stone-500 mt-6" data-anim="fade-in">
+        * Todos los precios están expresados en CLP e incluyen IVA. Cotización formal tras visita técnica sin costo.
+      </p>
+    </div>
+  </section>
+
+  <!-- TAB COMPARATIVO -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Comparador</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Elige tu madera ideal</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Tres categorías principales según tipo y calidad de la madera.</p>
+      </div>
+      <div data-tab-group="maderas" class="flex justify-center mb-8 flex-wrap gap-2" data-anim="fade-in-down">
+        <button data-tab="tab-economica" class="filter-btn active px-6 py-2 rounded-full bg-amber-100 text-amber-900 font-semibold">Económica</button>
+        <button data-tab="tab-premium" class="filter-btn px-6 py-2 rounded-full bg-amber-100 text-amber-900 font-semibold">Premium</button>
+        <button data-tab="tab-lujo" class="filter-btn px-6 py-2 rounded-full bg-amber-100 text-amber-900 font-semibold">Lujo</button>
+      </div>
+      <div data-tab-content="maderas" class="max-w-4xl mx-auto">
+        <div id="tab-economica" class="tab-content active">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="card p-6">
+              <h3 class="text-2xl font-bold text-stone-900 mb-2">MDF y Melamina</h3>
+              <p class="text-amber-700 font-bold mb-3">$35.000 - $280.000</p>
+              <p class="text-stone-600 mb-4">Ideal para muebles modernos, prácticos y de rápida entrega. Excelente relación precio-calidad.</p>
+              <ul class="space-y-1 text-sm text-stone-600">
+                <li>✓ Cocinas integrales</li>
+                <li>✓ Closets y roperos</li>
+                <li>✓ Muebles de oficina</li>
+                <li>✓ Revestimientos</li>
+              </ul>
+            </div>
+            <div class="card p-6">
+              <h3 class="text-2xl font-bold text-stone-900 mb-2">Pino impregnado</h3>
+              <p class="text-amber-700 font-bold mb-3">$45.000 - $420.000</p>
+              <p class="text-stone-600 mb-4">Madera noble, perfecta para exteriores, pérgolas y muebles rústicos con carácter.</p>
+              <ul class="space-y-1 text-sm text-stone-600">
+                <li>✓ Pérgolas y quinchos</li>
+                <li>✓ Decks</li>
+                <li>✓ Muebles rústicos</li>
+                <li>✓ Estructuras</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="tab-premium" class="tab-content">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="card p-6">
+              <h3 class="text-2xl font-bold text-stone-900 mb-2">Cedro</h3>
+              <p class="text-amber-700 font-bold mb-3">$180.000 - $580.000</p>
+              <p class="text-stone-600 mb-4">Madera aromática y resistente a la humedad. Excelente para closets y cajones.</p>
+              <ul class="space-y-1 text-sm text-stone-600">
+                <li>✓ Closets y vestidores</li>
+                <li>✓ Cajones finos</li>
+                <li>✓ Revestimientos</li>
+                <li>✓ Puertas de interior</li>
+              </ul>
+            </div>
+            <div class="card p-6">
+              <h3 class="text-2xl font-bold text-stone-900 mb-2">Roble</h3>
+              <p class="text-amber-700 font-bold mb-3">$350.000 - $1.450.000</p>
+              <p class="text-stone-600 mb-4">Madera dura de gran resistencia y veta espectacular. Calidad heredable.</p>
+              <ul class="space-y-1 text-sm text-stone-600">
+                <li>✓ Muebles finos</li>
+                <li>✓ Puertas de calidad</li>
+                <li>✓ Pisos</li>
+                <li>✓ Cocinas premium</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="tab-lujo" class="tab-content">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="card p-6 border-2 border-amber-500">
+              <span class="badge mb-2">Premium</span>
+              <h3 class="text-2xl font-bold text-stone-900 mb-2">Nogal</h3>
+              <p class="text-amber-700 font-bold mb-3">$480.000 - $2.500.000</p>
+              <p class="text-stone-600 mb-4">Madera oscura y elegante. La preferida por ebanistas para muebles finos.</p>
+              <ul class="space-y-1 text-sm text-stone-600">
+                <li>✓ Escritorios finos</li>
+                <li>✓ Librerías</li>
+                <li>✓ Muebles de representación</li>
+                <li>✓ Decoración exclusiva</li>
+              </ul>
+            </div>
+            <div class="card p-6 border-2 border-amber-500">
+              <span class="badge mb-2">A medida</span>
+              <h3 class="text-2xl font-bold text-stone-900 mb-2">Maderas nobles importadas</h3>
+              <p class="text-amber-700 font-bold mb-3">Cotización especial</p>
+              <p class="text-stone-600 mb-4">Caoba, ébano, cerezo y otras maderas finas para proyectos únicos de lujo.</p>
+              <ul class="space-y-1 text-sm text-stone-600">
+                <li>✓ Muebles de lujo</li>
+                <li>✓ Restauración patrimonial</li>
+                <li>✓ Proyectos únicos</li>
+                <li>✓ Diseño exclusivo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-stone-100">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Dudas frecuentes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Sobre pagos y cotizaciones</h2>
+      </div>
+      <div id="faq-container" class="max-w-3xl mx-auto space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Clientes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Lo que opinan nuestros clientes</h2>
+      </div>
+      <div id="testimonios-track" class="snap-scroll flex overflow-x-auto pb-6 scrollbar-hide"></div>
+      <div id="testimonios-dots"></div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-anim="fade-in-left">
+          <span class="badge mb-3">Cotizador rápido</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-stone-900 mt-2 mb-4">¿Cuánto costará tu proyecto?</h2>
+          <p class="text-stone-600 text-lg mb-6">Una estimación en 30 segundos. Te entregamos cotización por escrito en 48 horas.</p>
+        </div>
+        <form id="calculadora-form" class="card p-8" data-anim="fade-in-right">
+          <h3 class="text-2xl font-bold text-stone-900 mb-6">Calcula tu presupuesto</h3>
+          <div class="space-y-4">
+            <div>
+              <label class="label-field">Tipo de mueble</label>
+              <select name="tipo" class="input-field" required>
+                <option value="mueble">Mueble a medida</option>
+                <option value="cocina">Cocina integral</option>
+                <option value="closet">Closet / vestidor</option>
+                <option value="puerta">Puerta o ventana</option>
+                <option value="deck">Deck o pérgola</option>
+                <option value="restauracion">Restauración</option>
+                <option value="tallado">Tallado decorativo</option>
+                <option value="diseno">Diseño 3D</option>
+                <option value="barnizado">Barnizado</option>
+                <option value="industrial">Carpintería industrial</option>
+              </select>
+            </div>
+            <div>
+              <label class="label-field">Plazo de entrega</label>
+              <select name="urgencia" class="input-field" required>
+                <option value="1">Estándar (30-45 días)</option>
+                <option value="1.3">Rápido (15-20 días) — +30%</option>
+                <option value="1.6">Urgente (7-10 días) — +60%</option>
+              </select>
+            </div>
+            <div>
+              <label class="label-field">Tamaño aproximado (m²)</label>
+              <input type="number" name="metros" min="1" step="0.5" class="input-field" value="1" required>
+            </div>
+            <button type="submit" class="btn-accent w-full py-3">Calcular presupuesto →</button>
+          </div>
+          <div id="calc-result" class="hidden mt-6"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-wood-gradient text-white py-16">
+    <div class="container-page text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4" data-anim="fade-in-up">¿Quieres una cotización formal?</h2>
+      <p class="text-xl text-amber-100 mb-8 max-w-2xl mx-auto" data-anim="fade-in-up">Agenda una visita técnica gratuita. Te entregamos un presupuesto detallado por escrito en 48 horas.</p>
+      <a href="contacto.html" class="btn-accent text-lg px-8 py-3 inline-block" data-anim="fade-in-up">Solicitar visita técnica</a>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Políticas de privacidad — MaderaStudio</title>
+  <meta name="description" content="Política de privacidad de MaderaStudio. Cómo recopilamos, usamos y protegemos tus datos personales.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+          },
+          colors: { wood: { 50:'#FFFBEB', 100:'#fef3c7', 200:'#fde68a', 700:'#B45309', 800:'#92400E', 900:'#78350F' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <!-- HERO -->
+  <header class="relative bg-hero text-white overflow-hidden" data-parallax>
+    <div class="absolute inset-0 wood-texture"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="container-page relative pt-20 pb-20 md:pb-24">
+      <div class="max-w-3xl">
+        <span class="badge mb-6 anim-fade-in-down" data-reveal>Documento legal</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 anim-fade-in-up" data-reveal>
+          Política de <span class="font-display italic text-amber-300">privacidad</span>
+        </h1>
+        <p class="text-lg md:text-xl text-amber-50 anim-fade-in-up" style="animation-delay:0.2s" data-reveal>
+          Tu privacidad es importante. Conoce cómo recopilamos, usamos y protegemos tu información personal.
+        </p>
+        <p class="text-sm text-amber-200 mt-4 anim-fade-in" data-reveal>Última actualización: enero 2026 · Versión 2.1</p>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.16c58.36-10.79,114.27-30.13,172-41.86,82.39-16.72,168.2-44.42,250.61-35.38,60.55,6.62,116.62,32.68,177.18,49.06,57,15.46,114.48,22.71,171.45,16.95C1156.69,38.59,1200,57.46,1200,57.46V120H0V29.61C49.18,52.31,153.84,80.66,321.39,56.16Z" fill="#FFFBEB"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- RESUMEN RÁPIDO -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-10">
+        <span class="badge mb-3" data-anim="fade-in-down">Resumen</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Lo esencial en 4 puntos</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card p-6" data-anim="fade-in-up">
+          <div class="w-12 h-12 rounded-xl bg-amber-700 text-white flex items-center justify-center font-bold text-xl mb-3">1</div>
+          <h3 class="font-bold text-stone-900 mb-2">Recopilamos lo necesario</h3>
+          <p class="text-sm text-stone-600">Solo datos personales relevantes para entregarte nuestros servicios.</p>
+        </div>
+        <div class="card p-6" data-anim="fade-in-up" style="animation-delay:0.1s">
+          <div class="w-12 h-12 rounded-xl bg-amber-700 text-white flex items-center justify-center font-bold text-xl mb-3">2</div>
+          <h3 class="font-bold text-stone-900 mb-2">Nunca vendemos datos</h3>
+          <p class="text-sm text-stone-600">Tus datos no se venden ni comparten con terceros sin tu consentimiento.</p>
+        </div>
+        <div class="card p-6" data-anim="fade-in-up" style="animation-delay:0.2s">
+          <div class="w-12 h-12 rounded-xl bg-amber-700 text-white flex items-center justify-center font-bold text-xl mb-3">3</div>
+          <h3 class="font-bold text-stone-900 mb-2">Tienes derechos ARCO</h3>
+          <p class="text-sm text-stone-600">Acceso, rectificación, cancelación y oposición sobre tus datos.</p>
+        </div>
+        <div class="card p-6" data-anim="fade-in-up" style="animation-delay:0.3s">
+          <div class="w-12 h-12 rounded-xl bg-amber-700 text-white flex items-center justify-center font-bold text-xl mb-3">4</div>
+          <h3 class="font-bold text-stone-900 mb-2">Seguridad robusta</h3>
+          <p class="text-sm text-stone-600">HTTPS, cifrado, acceso restringido y copias de seguridad periódicas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO -->
+  <section class="section">
+    <div class="container-page">
+      <div class="grid lg:grid-cols-4 gap-10">
+        <aside class="lg:col-span-1">
+          <div class="card p-6 lg:sticky lg:top-24" data-anim="fade-in-left">
+            <h4 class="font-bold text-stone-900 mb-4">Contenido</h4>
+            <ul class="space-y-2 text-sm text-stone-700">
+              <li><a href="#intro" class="hover:text-amber-700">1. Introducción</a></li>
+              <li><a href="#datos" class="hover:text-amber-700">2. Datos que recopilamos</a></li>
+              <li><a href="#finalidades" class="hover:text-amber-700">3. Finalidades</a></li>
+              <li><a href="#cookies" class="hover:text-amber-700">4. Cookies</a></li>
+              <li><a href="#terceros" class="hover:text-amber-700">5. Terceros</a></li>
+              <li><a href="#seguridad" class="hover:text-amber-700">6. Seguridad</a></li>
+              <li><a href="#arco" class="hover:text-amber-700">7. Derechos ARCO</a></li>
+              <li><a href="#conservacion" class="hover:text-amber-700">8. Conservación</a></li>
+              <li><a href="#menores" class="hover:text-amber-700">9. Menores</a></li>
+              <li><a href="#cambios" class="hover:text-amber-700">10. Cambios</a></li>
+              <li><a href="#contacto" class="hover:text-amber-700">11. Contacto</a></li>
+            </ul>
+            <div class="mt-6 pt-6 border-t border-amber-100">
+              <a href="contacto.html" class="btn-primary w-full text-sm py-2">Ejercer mis derechos</a>
+            </div>
+          </div>
+        </aside>
+
+        <div class="lg:col-span-3">
+          <div class="card p-8 md:p-10" data-anim="fade-in-up">
+
+            <h2 id="intro" class="text-2xl font-extrabold text-stone-900 mb-4 mt-0">1. Introducción</h2>
+            <p class="text-stone-700 leading-relaxed mb-6">MaderaStudio, en adelante "nosotros" o "el titular", con domicilio en Av. Los Carpinteros 2540, Santiago de Chile, respeta tu derecho a la privacidad y se compromete a proteger tu información personal de acuerdo con la Ley N°19.628 sobre Protección de Datos Personales de Chile y demás normativa aplicable.</p>
+
+            <h2 id="datos" class="text-2xl font-extrabold text-stone-900 mb-4">2. Datos que recopilamos</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">Recopilamos los siguientes datos personales cuando utilizas nuestros servicios o llenas nuestros formularios:</p>
+            <ul class="text-stone-700 space-y-2 mb-6 list-disc pl-6">
+              <li><strong>Datos de identificación:</strong> nombre completo, RUT (cuando aplique).</li>
+              <li><strong>Datos de contacto:</strong> dirección, teléfono, correo electrónico, comuna.</li>
+              <li><strong>Datos del proyecto:</strong> descripciones, fotos referenciales, medidas, presupuesto estimado.</li>
+              <li><strong>Datos de pago:</strong> medio de pago utilizado (no almacenamos datos de tarjetas).</li>
+              <li><strong>Datos de navegación:</strong> IP, navegador, páginas visitadas, tiempo en el sitio.</li>
+            </ul>
+
+            <h2 id="finalidades" class="text-2xl font-extrabold text-stone-900 mb-4">3. Finalidades del tratamiento</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">Usamos tus datos personales para las siguientes finalidades:</p>
+            <ul class="text-stone-700 space-y-2 mb-6 list-disc pl-6">
+              <li>Responder a tus consultas y solicitudes de cotización.</li>
+              <li>Elaborar presupuestos formales y proyectos a medida.</li>
+              <li>Gestionar la fabricación, entrega e instalación de tus muebles.</li>
+              <li>Coordinar la inscripción y participación en cursos de la academia.</li>
+              <li>Emitir boletas, facturas y demás documentación tributaria.</li>
+              <li>Enviar comunicaciones comerciales sobre nuevos productos, servicios o eventos (solo si diste tu autorización).</li>
+              <li>Cumplir con obligaciones legales y tributarias.</li>
+            </ul>
+
+            <h2 id="cookies" class="text-2xl font-extrabold text-stone-900 mb-4">4. Cookies y tecnologías similares</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">Nuestro sitio web utiliza cookies y tecnologías similares para mejorar tu experiencia. Las cookies que utilizamos incluyen:</p>
+            <ul class="text-stone-700 space-y-2 mb-6 list-disc pl-6">
+              <li><strong>Cookies esenciales:</strong> necesarias para el sitio (sesión, carrito).</li>
+              <li><strong>Cookies analíticas:</strong> Google Analytics para entender el uso del sitio.</li>
+              <li><strong>Cookies de marketing:</strong> Facebook Pixel, Google Ads (solo con tu consentimiento).</li>
+            </ul>
+            <p class="text-stone-700 leading-relaxed mb-6">Puedes configurar tu navegador para rechazar cookies, aunque esto puede limitar funcionalidades del sitio.</p>
+
+            <h2 id="terceros" class="text-2xl font-extrabold text-stone-900 mb-4">5. Compartir información con terceros</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">No vendemos ni compartimos tus datos personales con terceros, salvo en los siguientes casos:</p>
+            <ul class="text-stone-700 space-y-2 mb-6 list-disc pl-6">
+              <li>Proveedores de servicios de pago (transbank, Mercado Pago) para procesar pagos.</li>
+              <li>Empresas de transporte y logística para entregas.</li>
+              <li>Autoridades competentes cuando sea requerido por ley.</li>
+              <li>Con tu consentimiento explícito.</li>
+            </ul>
+
+            <h2 id="seguridad" class="text-2xl font-extrabold text-stone-900 mb-4">6. Seguridad de los datos</h2>
+            <p class="text-stone-700 leading-relaxed mb-6">Implementamos medidas técnicas y organizativas para proteger tus datos: servidores seguros (HTTPS), cifrado de contraseñas, acceso restringido al personal autorizado, copias de seguridad periódicas y protocolos de respuesta ante filtraciones.</p>
+
+            <h2 id="arco" class="text-2xl font-extrabold text-stone-900 mb-4">7. Tus derechos (ARCO)</h2>
+            <p class="text-stone-700 leading-relaxed mb-4">Conforme a la legislación vigente, tienes los siguientes derechos sobre tus datos personales:</p>
+            <ul class="text-stone-700 space-y-2 mb-6 list-disc pl-6">
+              <li><strong>Acceso:</strong> conocer qué datos tenemos sobre ti.</li>
+              <li><strong>Rectificación:</strong> corregir datos inexactos o incompletos.</li>
+              <li><strong>Cancelación:</strong> eliminar tus datos cuando consideres que no son necesarios.</li>
+              <li><strong>Oposición:</strong> oponerte al tratamiento de tus datos para finalidades específicas.</li>
+            </ul>
+            <p class="text-stone-700 leading-relaxed mb-6">Para ejercer estos derechos, contáctanos a <a href="mailto:contacto@maderastudio.cl" class="text-amber-700 underline">contacto@maderastudio.cl</a> o en nuestro domicilio comercial. Responderemos en un plazo máximo de 15 días hábiles.</p>
+
+            <h2 id="conservacion" class="text-2xl font-extrabold text-stone-900 mb-4">8. Conservación de los datos</h2>
+            <p class="text-stone-700 leading-relaxed mb-6">Conservamos tus datos personales mientras mantengas una relación comercial con nosotros y por el período adicional necesario para cumplir con obligaciones legales (generalmente 6 años para documentación tributaria).</p>
+
+            <h2 id="menores" class="text-2xl font-extrabold text-stone-900 mb-4">9. Menores de edad</h2>
+            <p class="text-stone-700 leading-relaxed mb-6">Nuestros servicios no están dirigidos a menores de 14 años. Para la inscripción de menores en cursos de la academia, requerimos consentimiento expreso del padre, madre o apoderado.</p>
+
+            <h2 id="cambios" class="text-2xl font-extrabold text-stone-900 mb-4">10. Cambios a esta política</h2>
+            <p class="text-stone-700 leading-relaxed mb-6">Nos reservamos el derecho de modificar esta política para reflejar cambios legales o en nuestras prácticas. Cualquier cambio significativo será notificado por correo electrónico a clientes activos y publicado en la página principal del sitio.</p>
+
+            <h2 id="contacto" class="text-2xl font-extrabold text-stone-900 mb-4">11. Contacto</h2>
+            <p class="text-stone-700 leading-relaxed mb-2">Si tienes preguntas o consultas sobre esta política o el tratamiento de tus datos, contáctanos:</p>
+            <ul class="text-stone-700 space-y-1 mb-6 list-none">
+              <li><strong>Email:</strong> <a href="mailto:contacto@maderastudio.cl" class="text-amber-700 underline">contacto@maderastudio.cl</a></li>
+              <li><strong>Teléfono:</strong> +56 9 8765 4321</li>
+              <li><strong>Dirección:</strong> Av. Los Carpinteros 2540, Santiago, Chile</li>
+              <li><strong>Horario de atención:</strong> Lun-Vie 09:00-19:00 | Sáb 10:00-14:00</li>
+            </ul>
+
+            <div class="bg-amber-50 border-2 border-amber-200 rounded-xl p-6 mt-8">
+              <p class="text-sm text-stone-700"><strong>Fecha de entrada en vigencia:</strong> 1 de enero de 2026<br>
+              <strong>Versión del documento:</strong> 2.1</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ RELACIONADAS -->
+  <section class="section bg-stone-100">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Dudas frecuentes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Sobre privacidad y datos</h2>
+      </div>
+      <div id="faq-container" class="max-w-3xl mx-auto space-y-3"></div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academia y horarios de clases — MaderaStudio</title>
+  <meta name="description" content="Cursos de carpintería en Santiago: básica, diseño y fabricación, tallado y restauración. Horarios y temarios completos.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+          },
+          colors: { wood: { 50:'#FFFBEB', 100:'#fef3c7', 200:'#fde68a', 700:'#B45309', 800:'#92400E', 900:'#78350F' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <!-- HERO -->
+  <header class="relative bg-hero text-white overflow-hidden" data-parallax>
+    <div class="absolute inset-0 wood-texture"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="container-page relative pt-20 pb-24 md:pb-32">
+      <div class="max-w-3xl">
+        <span class="badge mb-6 anim-fade-in-down" data-reveal>Academia MaderaStudio</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 anim-fade-in-up" data-reveal>
+          Aprende el oficio del <span class="font-display italic text-amber-300">maestro carpintero</span>
+        </h1>
+        <p class="text-lg md:text-xl text-amber-50 anim-fade-in-up" style="animation-delay:0.2s" data-reveal>
+          Cursos prácticos con certificación oficial. Desde nivel inicial hasta especialización en tallado y restauración.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4" data-anim="fade-in-up" style="animation-delay:0.4s">
+          <a href="#cursos" class="btn-accent text-lg px-8 py-3">Ver cursos</a>
+          <a href="contacto.html" class="btn-outline bg-white/10 text-white border-white hover:bg-white hover:text-amber-900 px-8 py-3">Inscripción</a>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.16c58.36-10.79,114.27-30.13,172-41.86,82.39-16.72,168.2-44.42,250.61-35.38,60.55,6.62,116.62,32.68,177.18,49.06,57,15.46,114.48,22.71,171.45,16.95C1156.69,38.59,1200,57.46,1200,57.46V120H0V29.61C49.18,52.31,153.84,80.66,321.39,56.16Z" fill="#FFFBEB"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- CURSOS -->
+  <section id="cursos" class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Nuestros cursos</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Programas 2026</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Tres niveles de formación, desde cero hasta dominio profesional. Grupos reducidos, instructor dedicado.</p>
+      </div>
+      <div id="cursos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section class="bg-wood-gradient text-white py-16">
+    <div class="container-page">
+      <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Horarios semanales</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Calendario académico</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Bloques de mañana, tarde y noche para que elijas el que mejor se adapte a tu ritmo.</p>
+      </div>
+      <div class="max-w-4xl mx-auto" data-anim="fade-in-up">
+        <div class="card overflow-hidden">
+          <div id="horarios-clases-table"></div>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 mt-10 max-w-4xl mx-auto">
+        <div class="card p-6 text-center" data-anim="fade-in-up">
+          <div class="w-12 h-12 mx-auto rounded-full bg-amber-100 text-amber-700 flex items-center justify-center mb-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h4 class="font-bold text-stone-900 mb-1">Mañana</h4>
+          <p class="text-sm text-stone-600">10:00 - 13:00</p>
+        </div>
+        <div class="card p-6 text-center" data-anim="fade-in-up" style="animation-delay:0.1s">
+          <div class="w-12 h-12 mx-auto rounded-full bg-amber-100 text-amber-700 flex items-center justify-center mb-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/></svg>
+          </div>
+          <h4 class="font-bold text-stone-900 mb-1">Tarde</h4>
+          <p class="text-sm text-stone-600">15:00 - 18:00</p>
+        </div>
+        <div class="card p-6 text-center" data-anim="fade-in-up" style="animation-delay:0.2s">
+          <div class="w-12 h-12 mx-auto rounded-full bg-stone-200 text-stone-500 flex items-center justify-center mb-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          </div>
+          <h4 class="font-bold text-stone-900 mb-1">Noche</h4>
+          <p class="text-sm text-stone-600">No disponible</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIO DE ATENCIÓN COMERCIAL -->
+  <section class="section">
+    <div class="container-page">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-anim="fade-in-left">
+          <span class="badge mb-3">Atención comercial</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-stone-900 mt-2 mb-4">Horarios de visita al taller</h2>
+          <p class="text-stone-600 text-lg mb-6">Te invitamos a conocer nuestro taller, ver maquinaria y conversar sobre tu proyecto en persona.</p>
+          <ul class="space-y-2 text-stone-700">
+            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Visitas con cita previa</li>
+            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Estacionamiento privado</li>
+            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Muestras de maderas disponibles</li>
+          </ul>
+        </div>
+        <div class="card p-6" data-anim="fade-in-right">
+          <div id="horarios-atencion-table"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTORES -->
+  <section id="instructores" class="section bg-stone-100">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Instructores</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Maestros que te enseñarán</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Profesionales con décadas de experiencia en taller y aula.</p>
+      </div>
+      <div id="equipo-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS DE ALUMNOS -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Exalumnos</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Historias de quienes pasaron por la academia</h2>
+      </div>
+      <div id="testimonios-track" class="snap-scroll flex overflow-x-auto pb-6 scrollbar-hide"></div>
+      <div id="testimonios-dots"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Dudas frecuentes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Sobre los cursos</h2>
+      </div>
+      <div id="faq-container" class="max-w-3xl mx-auto space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-wood-gradient text-white py-16">
+    <div class="container-page text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4" data-anim="fade-in-up">Inscríbete y comienza tu camino</h2>
+      <p class="text-xl text-amber-100 mb-8 max-w-2xl mx-auto" data-anim="fade-in-up">Cupos limitados por grupo. Reserva tu lugar con un 30% de anticipo.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="contacto.html" class="btn-accent text-lg px-8 py-3 inline-block" data-anim="fade-in-up">Inscribirme ahora</a>
+        <a href="https://wa.me/56987654321" target="_blank" class="btn-outline bg-white/10 border-white text-white hover:bg-white hover:text-amber-900 px-8 py-3 inline-block" data-anim="fade-in-up">Hablar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

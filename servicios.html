@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios — MaderaStudio | Muebles a medida, cocinas, closets</title>
+  <meta name="description" content="Todos nuestros servicios de carpintería: muebles a medida, cocinas integrales, closets, puertas, decks, restauración y tallado.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+          },
+          colors: { wood: { 50:'#FFFBEB', 100:'#fef3c7', 200:'#fde68a', 700:'#B45309', 800:'#92400E', 900:'#78350F' } }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <!-- HERO -->
+  <header class="relative bg-hero text-white overflow-hidden" data-parallax>
+    <div class="absolute inset-0 wood-texture"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="container-page relative pt-20 pb-24 md:pb-32">
+      <div class="max-w-3xl">
+        <span class="badge mb-6 anim-fade-in-down" data-reveal>Lo que hacemos</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 anim-fade-in-up" data-reveal>
+          Servicios de <span class="font-display italic text-amber-300">carpintería integral</span>
+        </h1>
+        <p class="text-lg md:text-xl text-amber-50 anim-fade-in-up" style="animation-delay:0.2s" data-reveal>
+          Desde una repisa flotante hasta cocinas completas, fabricamos cualquier pieza en madera con la calidad y precisión que nos distingue.
+        </p>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.16c58.36-10.79,114.27-30.13,172-41.86,82.39-16.72,168.2-44.42,250.61-35.38,60.55,6.62,116.62,32.68,177.18,49.06,57,15.46,114.48,22.71,171.45,16.95C1156.69,38.59,1200,57.46,1200,57.46V120H0V29.61C49.18,52.31,153.84,80.66,321.39,56.16Z" fill="#FFFBEB"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- LISTADO DE SERVICIOS -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Catálogo completo</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Todos nuestros servicios</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">10 líneas de servicio especializadas. Cada una con equipo dedicado y materiales seleccionados.</p>
+      </div>
+      <div id="servicios-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section class="bg-wood-gradient text-white py-16">
+    <div class="container-page">
+      <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section bg-stone-100">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Metodología</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">¿Cómo fabricamos tu mueble?</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Un proceso profesional con 6 etapas bien definidas, sin sorpresas.</p>
+      </div>
+      <div id="proceso-steps" class="max-w-3xl mx-auto relative proceso-line"></div>
+    </div>
+  </section>
+
+  <!-- MADERAS -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Materiales</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Tipos de madera que trabajamos</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Te asesoramos en la elección según tu presupuesto, uso y estilo.</p>
+      </div>
+      <div id="maderas-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Dudas frecuentes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Preguntas frecuentes</h2>
+      </div>
+      <div id="faq-container" class="max-w-3xl mx-auto space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Clientes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Historias de muebles entregados</h2>
+      </div>
+      <div id="testimonios-track" class="snap-scroll flex overflow-x-auto pb-6 scrollbar-hide"></div>
+      <div id="testimonios-dots"></div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA RÁPIDA -->
+  <section class="section">
+    <div class="container-page">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-anim="fade-in-left">
+          <span class="badge mb-3">Cotizador</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-stone-900 mt-2 mb-4">Estima el valor de tu proyecto</h2>
+          <p class="text-stone-600 text-lg mb-6">Una estimación rápida basada en tipo de mueble, plazo y urgencia. La cotización formal es sin costo.</p>
+          <ul class="space-y-3 text-stone-700">
+            <li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold">✓</span> Sin compromiso</li>
+            <li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold">✓</span> Cotización formal en 48h</li>
+            <li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold">✓</span> Diseño 3D bonificable</li>
+          </ul>
+        </div>
+        <form id="calculadora-form" class="card p-8" data-anim="fade-in-right">
+          <h3 class="text-2xl font-bold text-stone-900 mb-6">Calcula tu presupuesto</h3>
+          <div class="space-y-4">
+            <div>
+              <label class="label-field">Tipo de mueble</label>
+              <select name="tipo" class="input-field" required>
+                <option value="mueble">Mueble a medida</option>
+                <option value="cocina">Cocina integral</option>
+                <option value="closet">Closet / vestidor</option>
+                <option value="puerta">Puerta o ventana</option>
+                <option value="deck">Deck o pérgola</option>
+                <option value="restauracion">Restauración</option>
+                <option value="tallado">Tallado decorativo</option>
+                <option value="diseno">Diseño 3D</option>
+                <option value="barnizado">Barnizado</option>
+                <option value="industrial">Carpintería industrial</option>
+              </select>
+            </div>
+            <div>
+              <label class="label-field">Plazo de entrega</label>
+              <select name="urgencia" class="input-field" required>
+                <option value="1">Estándar (30-45 días)</option>
+                <option value="1.3">Rápido (15-20 días) — +30%</option>
+                <option value="1.6">Urgente (7-10 días) — +60%</option>
+              </select>
+            </div>
+            <div>
+              <label class="label-field">Tamaño aproximado (m²)</label>
+              <input type="number" name="metros" min="1" step="0.5" class="input-field" value="1" required>
+            </div>
+            <button type="submit" class="btn-accent w-full py-3">Calcular presupuesto →</button>
+          </div>
+          <div id="calc-result" class="hidden mt-6"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-wood-gradient text-white py-16">
+    <div class="container-page text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4" data-anim="fade-in-up">¿No encuentras lo que buscas?</h2>
+      <p class="text-xl text-amber-100 mb-8 max-w-2xl mx-auto" data-anim="fade-in-up">Si tu proyecto es especial o diferente a estos servicios, cuéntanos. Hacemos piezas únicas a pedido.</p>
+      <a href="contacto.html" class="btn-accent text-lg px-8 py-3 inline-block" data-anim="fade-in-up">Conversemos</a>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaderaStudio — Carpintería artesanal y academia</title>
+  <meta name="description" content="Carpintería artesanal en Santiago. Fabricamos muebles a medida, cocinas, closets y enseñamos en nuestra academia. 25 años de experiencia.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+          },
+          colors: {
+            wood: { 50:'#FFFBEB', 100:'#fef3c7', 200:'#fde68a', 300:'#fcd34d', 700:'#B45309', 800:'#92400E', 900:'#78350F' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="nav-container"></div>
+
+  <!-- HERO -->
+  <header class="relative bg-hero text-white overflow-hidden" data-parallax>
+    <div class="absolute inset-0 wood-texture"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
+    <div class="container-page relative pt-20 pb-32 md:pb-48">
+      <div class="max-w-3xl">
+        <span class="badge mb-6 anim-fade-in-down" data-reveal>Desde 1998 · Maestros carpinteros</span>
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 anim-fade-in-up" data-reveal>
+          Madera que <span class="font-display italic text-amber-300">cuenta historias</span>
+        </h1>
+        <p class="text-lg md:text-2xl text-amber-50 mb-8 max-w-2xl anim-fade-in-up" style="animation-delay:0.2s" data-reveal>
+          Diseñamos y fabricamos muebles artesanales en madera noble, además de formar nuevas generaciones de carpinteros en nuestra academia.
+        </p>
+        <div class="flex flex-wrap gap-4 anim-fade-in-up" style="animation-delay:0.4s" data-reveal>
+          <a href="contacto.html" class="btn-accent text-lg px-8 py-3">Cotizar mi mueble</a>
+          <a href="servicios.html" class="btn-outline bg-white/10 text-white border-white hover:bg-white hover:text-amber-900 px-8 py-3">Ver servicios</a>
+        </div>
+        <div class="mt-12 flex items-center gap-6 text-sm anim-fade-in" style="animation-delay:0.6s">
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span>4.9/5 · +1200 clientes</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Garantía escrita 2 años</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-divider">
+      <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.16c58.36-10.79,114.27-30.13,172-41.86,82.39-16.72,168.2-44.42,250.61-35.38,60.55,6.62,116.62,32.68,177.18,49.06,57,15.46,114.48,22.71,171.45,16.95C1156.69,38.59,1200,57.46,1200,57.46V120H0V29.61C49.18,52.31,153.84,80.66,321.39,56.16Z" fill="#FFFBEB"></path>
+      </svg>
+    </div>
+  </header>
+
+  <!-- SERVICIOS DESTACADOS -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Nuestros servicios</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Soluciones en madera a tu medida</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Desde muebles para el hogar hasta proyectos industriales. Diseño, fabricación e instalación con garantía escrita.</p>
+      </div>
+      <div id="servicios-grid-home" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+      <div class="text-center mt-10" data-anim="fade-in">
+        <a href="servicios.html" class="btn-primary">Ver todos los servicios →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Cómo trabajamos</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">De la idea a tu hogar en 6 pasos</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Un proceso transparente, sin sorpresas, donde cada etapa está diseñada para tu tranquilidad.</p>
+      </div>
+      <div id="proceso-steps" class="max-w-3xl mx-auto relative proceso-line"></div>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section class="bg-wood-gradient text-white py-16 md:py-20">
+    <div class="container-page">
+      <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Lo que dicen nuestros clientes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Historias de muebles entregados</h2>
+      </div>
+      <div id="testimonios-track" class="snap-scroll flex overflow-x-auto pb-6 scrollbar-hide"></div>
+      <div id="testimonios-dots"></div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA -->
+  <section class="section">
+    <div class="container-page">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-anim="fade-in-left">
+          <span class="badge mb-3">Cotizador rápido</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-stone-900 mt-2 mb-4">¿Cuánto cuesta tu proyecto?</h2>
+          <p class="text-stone-600 text-lg mb-6">Obtén una referencia inmediata según tipo de mueble, urgencia y tamaño. Te contactaremos con una cotización formal sin costo.</p>
+          <ul class="space-y-3 text-stone-700">
+            <li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold">✓</span> Diseño 3D sin costo en proyectos grandes</li>
+            <li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold">✓</span> Presupuesto escrito, sin compromiso</li>
+            <li class="flex items-center gap-3"><span class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold">✓</span> Garantía de 2 años en estructura</li>
+          </ul>
+        </div>
+        <form id="calculadora-form" class="card p-8" data-anim="fade-in-right">
+          <h3 class="text-2xl font-bold text-stone-900 mb-6">Calcula tu presupuesto</h3>
+          <div class="space-y-4">
+            <div>
+              <label class="label-field">Tipo de mueble</label>
+              <select name="tipo" class="input-field" required>
+                <option value="mueble">Mueble a medida</option>
+                <option value="cocina">Cocina integral</option>
+                <option value="closet">Closet / vestidor</option>
+                <option value="puerta">Puerta o ventana</option>
+                <option value="deck">Deck o pérgola</option>
+                <option value="restauracion">Restauración</option>
+                <option value="tallado">Tallado decorativo</option>
+                <option value="diseno">Diseño 3D</option>
+                <option value="barnizado">Barnizado</option>
+                <option value="industrial">Carpintería industrial</option>
+              </select>
+            </div>
+            <div>
+              <label class="label-field">Plazo de entrega</label>
+              <select name="urgencia" class="input-field" required>
+                <option value="1">Estándar (30-45 días)</option>
+                <option value="1.3">Rápido (15-20 días) — +30%</option>
+                <option value="1.6">Urgente (7-10 días) — +60%</option>
+              </select>
+            </div>
+            <div>
+              <label class="label-field">Tamaño aproximado (m² o metros lineales)</label>
+              <input type="number" name="metros" min="1" step="0.5" class="input-field" value="1" required>
+            </div>
+            <button type="submit" class="btn-accent w-full py-3">Calcular presupuesto →</button>
+          </div>
+          <div id="calc-result" class="hidden mt-6"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- MADERAS -->
+  <section class="section bg-stone-100">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Materiales nobles</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Maderas que elegimos para ti</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Trabajamos solo maderas certificadas FSC. Cada una tiene características únicas para tu proyecto.</p>
+      </div>
+      <div id="maderas-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ ELEGIRNOS -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Por qué elegirnos</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Lo que nos hace diferentes</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">No somos una fábrica más. Somos un taller donde cada mueble recibe atención personalizada.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card p-6 text-center" data-anim="fade-in-up">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.061-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2">Garantía escrita</h3>
+          <p class="text-sm text-stone-600">2 años en todos nuestros muebles. Documento formal que respalda tu inversión.</p>
+        </div>
+        <div class="card p-6 text-center" data-anim="fade-in-up" style="animation-delay:0.1s">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.356A2 2 0 0110.07 3h3.86a2 2 0 011.664.89l.812 1.356A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2">Diseño 3D gratis</h3>
+          <p class="text-sm text-stone-600">Visualiza tu mueble antes de fabricarlo. Bonificable en proyectos grandes.</p>
+        </div>
+        <div class="card p-6 text-center" data-anim="fade-in-up" style="animation-delay:0.2s">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2">Plazos cumplidos</h3>
+          <p class="text-sm text-stone-600">Cronograma detallado desde el primer día. Cumplimos el 95% de nuestras fechas.</p>
+        </div>
+        <div class="card p-6 text-center" data-anim="fade-in-up" style="animation-delay:0.3s">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-2">Pasión artesanal</h3>
+          <p class="text-sm text-stone-600">Cada carpintero ama su oficio. Eso se nota en los detalles de cada pieza.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA PREVIEW -->
+  <section class="section bg-amber-50">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Trabajos recientes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Una muestra de lo que hacemos</h2>
+        <p class="section-subtitle" data-anim="fade-in-up">Algunos de nuestros proyectos favoritos. Cada uno hecho con mimo y oficio.</p>
+      </div>
+      <div id="galeria-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      <div class="text-center mt-10" data-anim="fade-in">
+        <a href="galeria.html" class="btn-primary">Ver galería completa →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIA BANNER -->
+  <section class="section">
+    <div class="container-page">
+      <div class="bg-wood-gradient text-white rounded-3xl overflow-hidden shadow-2xl">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+          <div class="p-8 md:p-12" data-anim="fade-in-left">
+            <span class="badge mb-4">Academia</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Aprende carpintería con maestros</h2>
+            <p class="text-amber-100 text-lg mb-6">Cursos prácticos para todos los niveles: desde tus primeros pasos hasta especialización en tallado y restauración. Grupos reducidos, certificación oficial.</p>
+            <ul class="space-y-2 mb-8 text-amber-50">
+              <li class="flex items-center gap-2"><span class="text-amber-300">✓</span> 3 niveles: básica, diseño, restauración</li>
+              <li class="flex items-center gap-2"><span class="text-amber-300">✓</span> Grupos de máximo 12 personas</li>
+              <li class="flex items-center gap-2"><span class="text-amber-300">✓</span> Certificado al aprobar</li>
+            </ul>
+            <a href="horarios-clases.html" class="btn-accent inline-block">Ver cursos y horarios</a>
+          </div>
+          <div class="relative h-64 lg:h-full" data-anim="fade-in-right">
+            <img src="https://picsum.photos/seed/academia-madera/800/600" alt="Academia MaderaStudio" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container-page">
+      <div class="text-center mb-12">
+        <span class="badge mb-3" data-anim="fade-in-down">Preguntas frecuentes</span>
+        <h2 class="section-title mt-2" data-anim="fade-in-up">Resolvemos tus dudas</h2>
+      </div>
+      <div id="faq-container" class="max-w-3xl mx-auto space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="bg-wood-gradient text-white py-16 md:py-20">
+    <div class="container-page text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold mb-4 anim-fade-in-up" data-anim="fade-in-up">¿Listo para tu mueble a medida?</h2>
+      <p class="text-xl text-amber-100 mb-8 max-w-2xl mx-auto" data-anim="fade-in-up">Conversemos sobre tu proyecto. Asesoramiento sin compromiso y diseño 3D sin costo en proyectos grandes.</p>
+      <div class="flex flex-wrap justify-center gap-4" data-anim="fade-in-up">
+        <a href="contacto.html" class="btn-accent text-lg px-8 py-3">Solicitar cotización</a>
+        <a href="https://wa.me/56987654321" target="_blank" class="btn-outline bg-white/10 border-white text-white hover:bg-white hover:text-amber-900 px-8 py-3">WhatsApp directo</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>
